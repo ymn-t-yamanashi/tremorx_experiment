@@ -87,6 +87,9 @@ defmodule TremorxExperimentWeb do
       import TremorxExperimentWeb.CoreComponents
       import TremorxExperimentWeb.Gettext
 
+      use Tremorx
+
+      unquote(verified_routes())
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 
